@@ -1,11 +1,14 @@
-import React from "react";
+import React from 'react';
+import { image } from '../data/user'; // Import the image from data/user.js file.
 
-function About() {
+const About = () => {
   return (
-    <div id="about">
-      <h2>About Me</h2>
-      <p>I Made This</p>
-      <img src={image} alt="I made this" />
+    <div>
+      <img src={image} alt="About" />
+      <h1>About Me</h1>
+      <p>This is the about section of the portfolio.</p>
     </div>
   );
-}
+};
+
+export default About; // Default export
